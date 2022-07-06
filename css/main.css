@@ -263,7 +263,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
   padding: 0;
   margin: 0;
 }
@@ -480,7 +481,6 @@ body {
 
 .expertises {
   padding-top: 94px;
-  padding-bottom: 55px;
 }
 
 .expertises-list {
@@ -502,9 +502,119 @@ body {
   color: #18063c;
 }
 .expertises-list__text {
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 1;
   opacity: 0.6;
+}
+
+.features {
+  padding-bottom: 77px;
+  padding-top: 120px;
+}
+.features__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.46;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  color: #18063c;
+}
+.features__text {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 2;
+  opacity: 0.8;
+  width: 659px;
+  margin: 0 auto;
+  margin-bottom: 64px;
+}
+.features__img-line {
+  position: absolute;
+  top: -100px;
+  left: -300px;
+  width: 141px;
+}
+.features__img-center {
+  position: absolute;
+  top: 30px;
+  right: 385px;
+  width: 176px;
+  z-index: -1;
+}
+.features__img-rocket {
+  position: absolute;
+  top: -22px;
+  right: -55px;
+  width: 197px;
+}
+
+.features-position {
+  position: relative;
+}
+
+.features-content {
+  text-align: center;
+}
+
+.features-list {
+  display: flex;
+  justify-content: center;
+}
+.features-list__item {
+  box-shadow: 14px 20px 48px rgba(25, 15, 44, 0.06);
+  border-radius: 48px;
+  width: 369px;
+  padding: 28px 69px 28px 28px;
+  background-color: #70d0dc;
+}
+.features-list__item:not(:last-child) {
+  margin-right: 32px;
+}
+.features-list__item--purple {
+  background-color: #7562e0;
+}
+.features-list__item--orange {
+  background-color: #fa865f;
+}
+.features-list__svg {
+  width: 48px;
+}
+.features-list__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1;
+  margin-bottom: 10px;
+  text-align: left;
+  width: 305px;
+  color: #ffffff;
+}
+.features-list__text {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.44;
+  opacity: 0.8;
+  width: 273px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.list-block-svg {
+  width: 88px;
+  height: 88px;
+  box-shadow: 14px 20px 48px rgba(25, 15, 44, 0.06);
+  border-radius: 24px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.5);
 }/*# sourceMappingURL=main.css.map */

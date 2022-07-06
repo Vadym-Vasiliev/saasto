@@ -1,0 +1,122 @@
+.features {
+  padding-bottom: 77px;
+  padding-top: 120px;
+
+  &__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1.46;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+
+    color: $second-text-light;
+  }
+
+  &__text {
+    font-family: $font-inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 2;
+    opacity: 0.8;
+    width: 659px;
+    margin: 0 auto;
+    margin-bottom: 64px;
+  }
+
+  &__img-line {
+    position: absolute;
+    top: -100px;
+    left: -300px;
+    width: 141px;
+  }
+
+  &__img-center {
+    position: absolute;
+    top: 30px;
+    right: 385px;
+    width: 176px;
+    z-index: -1;
+  }
+
+  &__img-rocket {
+    position: absolute;
+    top: -22px;
+    right: -55px;
+    width: 197px;
+  }
+}
+
+.features-position {
+  position: relative;
+}
+
+.features-content {
+  text-align: center;
+}
+
+.features-list {
+  display: flex;
+  justify-content: center;
+
+  &__item {
+    box-shadow: 14px 20px 48px rgba(25, 15, 44, 0.06);
+    border-radius: 48px;
+    width: 369px;
+    padding: 28px 69px 28px 28px;
+
+    background-color: #70d0dc;
+
+    &:not(:last-child) {
+      margin-right: 32px;
+    }
+
+    &--purple {
+      background-color: #7562e0;
+    }
+    &--orange {
+      background-color: #fa865f;
+    }
+  }
+
+  &__svg {
+    width: 48px;
+  }
+  &__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1;
+    margin-bottom: 10px;
+    text-align: left;
+    width: 305px;
+
+    color: $white;
+  }
+  &__text {
+    font-family: $font-inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.44;
+    opacity: 0.8;
+    width: 273px;
+    text-align: left;
+
+    color: $white;
+  }
+}
+
+.list-block-svg {
+  width: 88px;
+  height: 88px;
+  box-shadow: 14px 20px 48px rgba(25, 15, 44, 0.06);
+  border-radius: 24px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgba(255, 255, 255, 0.5);
+}
