@@ -1000,4 +1000,129 @@ body {
   margin-bottom: 64px;
   display: flex;
   justify-content: center;
+}
+
+.partners {
+  padding-top: 120px;
+  padding-bottom: 80px;
+  background-color: #f8fefe;
+}
+.partners__img {
+  position: absolute;
+  top: 160px;
+  right: 190px;
+  width: 176px;
+  z-index: -1;
+}
+
+.partners-position {
+  position: relative;
+  z-index: 1;
+}
+
+.partners-content {
+  display: flex;
+  align-items: center;
+}
+
+.partners-leftblock {
+  position: relative;
+  width: 799px;
+  height: 651px;
+  margin-right: 100px;
+  margin-left: -250px;
+}
+.partners-leftblock__container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.partners-leftblock__container--one {
+  top: 0;
+  left: 118px;
+  border-radius: 40px;
+  width: 240px;
+  height: 152px;
+  background-color: rgba(243, 83, 37, 0.1);
+}
+.partners-leftblock__container--two {
+  top: 88px;
+  right: 70px;
+  border-radius: 48px;
+  width: 315px;
+  height: 204px;
+  background-color: rgba(51, 214, 100, 0.1);
+}
+.partners-leftblock__container--three {
+  top: 206px;
+  left: 0;
+  border-radius: 54px;
+  width: 358px;
+  height: 239px;
+  background-color: rgba(255, 186, 0, 0.1);
+}
+.partners-leftblock__container--four {
+  bottom: 57px;
+  right: 0;
+  border-radius: 54px;
+  width: 385px;
+  height: 243px;
+  background-color: rgba(66, 133, 244, 0.1);
+}
+.partners-leftblock__container--five {
+  bottom: 0;
+  left: 118px;
+  border-radius: 48px;
+  width: 240px;
+  height: 152px;
+  background-color: rgba(28, 96, 191, 0.1);
+}
+.partners-leftblock__img-one {
+  width: 48px;
+}
+.partners-leftblock__img-two {
+  width: 72px;
+}
+.partners-leftblock__img-three {
+  width: 87px;
+}
+.partners-leftblock__img-four {
+  width: 114px;
+}
+.partners-leftblock__img-five {
+  width: 48px;
+}
+
+.partners-rightblock {
+  width: 525px;
+  z-index: 1;
+}
+.partners-rightblock__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.46;
+  margin-bottom: 24px;
+  color: #18063c;
+}
+.partners-rightblock__text {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 2;
+  opacity: 0.8;
+  margin-bottom: 48px;
+  width: 471px;
+}
+.partners-rightblock__btn {
+  border: 1px solid #ff553e;
+  border-radius: 40px;
+  padding: 24px 40px;
+  transform: scale(1);
+  transition: transform 250ms linear;
+}
+.partners-rightblock__btn:hover, .partners-rightblock__btn:focus {
+  transform: scale(1.05);
 }/*# sourceMappingURL=main.css.map */
