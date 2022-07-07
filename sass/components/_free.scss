@@ -1,0 +1,18 @@
+.free {
+  padding-top: 248px;
+  padding-bottom: 138px;
+
+  background-color: $second-bgc;
+}
+
+.free-leftblock {
+  &__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1.46;
+    margin-bottom: 24px;
+
+    color: $second-text-light;
+  }
+}
