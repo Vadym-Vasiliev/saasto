@@ -291,10 +291,10 @@ body {
 }
 
 .container {
-  width: 1170px;
+  width: 1200px;
   margin: 0 auto;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .visually-hidden {
