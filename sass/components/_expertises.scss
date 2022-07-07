@@ -2,6 +2,12 @@
   padding-top: 94px;
 }
 
+.expertises-content {
+  //
+  margin-right: 324px;
+  //
+}
+
 .expertises-list {
   display: flex;
   align-items: center;
@@ -10,7 +16,7 @@
   &__item {
     text-align: center;
     &:not(:last-child) {
-      margin-right: 80px;
+      margin-right: 180px;
     }
   }
 
@@ -19,6 +25,8 @@
     font-weight: 600;
     font-size: 48px;
     line-height: 1.33;
+    display: block;
+    margin-bottom: 10px;
 
     color: $second-text-light;
   }

@@ -1,5 +1,7 @@
 .hero {
-  padding-top: 220px;
+  // padding-top: 220px;
+  padding-top: 240px;
+
   padding-bottom: 182px;
   background-color: $second-bgc;
   overflow: hidden;
@@ -34,11 +36,12 @@
     transform: scale(1);
     transition: transform 250ms linear, color 250ms linear, background-color 250ms linear;
 
+    color: $white;
+    background-color: $accent;
+
     &:hover,
     &:focus {
       transform: scale(1.05);
-      color: $white;
-      background-color: $accent;
     }
   }
 }
@@ -53,39 +56,52 @@
   text-align: center;
   &__clock {
     position: absolute;
-    top: -82px;
-    left: -25px;
-    width: 135px;
-    height: 157px;
+    // top: -82px;
+    // left: -25px;
+    top: -91px;
+    left: -1px;
+    width: 162px;
   }
 
   &__fon-line {
     position: absolute;
-    top: -218px;
-    left: -149px;
-    width: 1660px;
-    height: 749px;
+    // top: -218px;
+    // left: -149px;
+    // width: 1660px;
+    left: -126px;
+    top: -220px;
+    width: 1695px;
+
+    //
+
     z-index: -1;
   }
 
   &__mobile-black {
     position: absolute;
-    top: 54px;
-    left: -270px;
-    width: 338px;
+    // top: 54px;
+    // left: -270px;
+    width: 503px;
+    left: -348px;
+    top: 59px;
   }
 
   &__notebook {
     position: absolute;
-    bottom: -14px;
-    right: 108px;
+    // bottom: -14px;
+    // right: 108px;
+    right: 119px;
+    bottom: -18px;
     width: 178px;
   }
 
   &__mobile-right {
     position: absolute;
-    bottom: -310px;
-    right: -340px;
-    width: 460px;
+    // bottom: -310px;
+    // right: -340px;
+
+    bottom: -641px;
+    right: -478px;
+    width: 685px;
   }
 }

@@ -1,4 +1,13 @@
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid #ececec;
+  z-index: 2;
+  //
+  padding-top: 30px;
+  //
   background-color: $second-bgc;
 
   &__link {
@@ -20,10 +29,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 80px;
 }
 
 .header-list {
   display: flex;
+  //
+  margin-right: -102px;
+  //
   &__item {
     &:not(:last-child) {
       margin-right: 48px;
@@ -87,8 +100,11 @@
     &:hover,
     &:focus {
       transform: scale(1.05);
-      color: $white;
+    }
+
+    &--right {
       background-color: $accent;
+      color: $white;
     }
   }
 }

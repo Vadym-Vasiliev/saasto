@@ -1,5 +1,6 @@
 .features {
-  padding-top: 120px;
+  // padding-top: 120px;
+  padding-top: 222px;
 
   &__title {
     font-style: normal;
@@ -26,23 +27,30 @@
 
   &__img-line {
     position: absolute;
-    top: -100px;
-    left: -300px;
-    width: 141px;
+    // top: -100px;
+    // left: -300px;
+
+    top: -124px;
+    left: -292px;
+    width: 172px;
   }
 
   &__img-center {
     position: absolute;
-    top: 30px;
-    right: 385px;
+    // top: 30px;
+    // right: 385px;
+    top: 31px;
+    right: 413px;
     width: 176px;
     z-index: -1;
   }
 
   &__img-rocket {
     position: absolute;
-    top: -22px;
-    right: -55px;
+    // top: -22px;
+    // right: -55px;
+    top: -19px;
+    right: -28px;
     width: 197px;
   }
 }
