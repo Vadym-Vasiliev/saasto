@@ -1,5 +1,5 @@
 .price {
-  padding-top: 120px;
+  padding-top: 178px;
   padding-bottom: 120px;
 
   &__title {
@@ -21,13 +21,13 @@
     line-height: 2;
     text-align: center;
     opacity: 0.8;
-    margin-bottom: 54px;
+    margin-bottom: 46px;
   }
 
   &__img-left {
     position: absolute;
-    bottom: 50px;
-    left: -300px;
+    bottom: 3px;
+    left: -542px;
     width: 409px;
   }
 
@@ -41,16 +41,16 @@
 
   &__img-right {
     position: absolute;
-    right: -50px;
-    top: 190px;
+    right: -23px;
+    top: 178px;
     width: 223px;
     z-index: -1;
   }
 
   &__img-snake {
     position: absolute;
-    top: 300px;
-    right: -80px;
+    top: 289px;
+    right: -57px;
     width: 136px;
     z-index: -2;
   }
@@ -64,7 +64,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 64px;
+  margin-bottom: 62px;
+  margin-right: 74px;
 
   &__span {
     font-style: normal;
@@ -122,6 +123,7 @@
   text-align: center;
   &__item {
     width: 470px;
+    height: 608px;
     border: 1px solid #ff553e;
     border-radius: 110px;
     padding: 64px;

@@ -34,37 +34,37 @@
 
   &__blue {
     position: absolute;
-    top: -118px;
-    left: -304px;
+    top: -134px;
+    left: -318px;
     width: 220px;
   }
 
   &__purple {
     position: absolute;
-    bottom: -40px;
-    left: -96px;
+    bottom: -21px;
+    left: -111px;
     width: 196px;
   }
 
   &__line {
     position: absolute;
-    top: 46px;
-    left: -164px;
+    top: 20px;
+    left: -186px;
     width: 147px;
     z-index: -1;
   }
 
   &__smile {
     position: absolute;
-    bottom: -49.5px;
-    right: -220px;
+    bottom: -32px;
+    right: -236px;
     width: 126px;
   }
 
   &__right {
     position: absolute;
-    bottom: -98px;
-    right: -257px;
+    bottom: -81px;
+    right: -272px;
     width: 94px;
     z-index: -1;
   }
@@ -76,7 +76,6 @@
 
 .client-content {
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
@@ -84,8 +83,8 @@
   border-radius: 370px;
   width: 298px;
   height: 379px;
-  margin-right: 48px;
-
+  margin-right: 50px;
+  margin-left: 71px;
   background-color: $second-bgc;
 }
 

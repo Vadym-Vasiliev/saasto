@@ -19,7 +19,7 @@
 
   &__span {
     opacity: 0.2;
-    border: 1px solid #404040;
+    border: 1px solid $main-text;
     display: block;
     margin-bottom: 40px;
   }
@@ -30,6 +30,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 1.33;
+    margin-right: 24px;
   }
 }
 
@@ -37,11 +38,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 58px;
+  margin-bottom: 54px;
 }
 
 .footer-list {
   display: flex;
+  margin-left: 54px;
 
   &__item {
     &:not(:last-child) {
@@ -93,12 +95,11 @@
 
   &__item {
     &:not(:last-child) {
-      margin-right: 44px;
+      margin-right: 37px;
     }
   }
 
   &__link {
-    width: 40px;
     height: 40px;
     border-radius: 50%;
     display: flex;

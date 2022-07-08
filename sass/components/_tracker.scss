@@ -1,5 +1,5 @@
 .tracker {
-  padding-top: 120px;
+  padding-top: 190px;
   padding-bottom: 120px;
   overflow: hidden;
   background-color: $blue-light;
@@ -34,29 +34,31 @@
 
   &__img-blue {
     position: absolute;
-    top: 280px;
-    right: 530px;
+    top: 279px;
+    right: 579px;
     width: 89px;
+    height: 124px;
   }
   &__img-red {
     position: absolute;
-    bottom: 100px;
-    left: -50px;
     width: 89px;
+    bottom: 103px;
+    left: -54px;
+    height: 124px;
   }
 
   &__img-left {
     position: absolute;
-    top: 250px;
-    left: -550px;
+    top: 235px;
+    left: -537px;
     width: 383px;
   }
 
   &__img-right {
     position: absolute;
-    top: -140px;
-    right: -550px;
-    width: 375px;
+    top: -186px;
+    right: -561px;
+    width: 438px;
   }
 
   &__img-line {
@@ -65,6 +67,25 @@
     left: 218px;
     width: 176px;
     z-index: -1;
+  }
+
+  &__img-one {
+    position: absolute;
+    top: 131px;
+    right: 109px;
+    width: 380px;
+  }
+  &__img-two {
+    position: absolute;
+    top: 219px;
+    right: -298px;
+    width: 490px;
+  }
+  &__img-three {
+    position: absolute;
+    top: 428px;
+    right: 111px;
+    width: 342px;
   }
 }
 
@@ -83,7 +104,7 @@
     }
 
     &--margin {
-      margin-left: 170px;
+      margin-left: 160px;
     }
   }
 

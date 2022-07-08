@@ -1,11 +1,11 @@
 .analytics {
-  padding-top: 120px;
+  padding-top: 185px;
   padding-bottom: 60px;
 
   &__img {
     position: absolute;
-    top: 133px;
-    right: 106px;
+    top: 120px;
+    right: 142px;
     width: 176px;
     z-index: -1;
   }
@@ -27,17 +27,19 @@
 
     margin-right: 34px;
     margin-left: -373px;
-    margin-top: 28px;
+    margin-top: -37px;
   }
 }
 
 .analytics-rightblock {
+  width: 568px;
+  height: 720px;
   &__title {
     font-style: normal;
     font-weight: 600;
     font-size: 48px;
     line-height: 1.42;
-    margin-bottom: 12px;
+    margin-bottom: 20px;
 
     color: $second-text-light;
   }
