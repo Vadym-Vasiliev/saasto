@@ -12,6 +12,10 @@
     margin-bottom: 20px;
 
     color: $second-text-light;
+
+    background-image: url(../img/tracker-line.png);
+    background-repeat: no-repeat;
+    background-position: 217px 35px;
   }
 
   &__text {
@@ -59,14 +63,6 @@
     top: -186px;
     right: -561px;
     width: 438px;
-  }
-
-  &__img-line {
-    position: absolute;
-    top: 35px;
-    left: 218px;
-    width: 176px;
-    z-index: -1;
   }
 
   &__img-one {

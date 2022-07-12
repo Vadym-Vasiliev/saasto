@@ -16,13 +16,6 @@
     left: -430px;
     width: 422px;
   }
-  &__img-line {
-    position: absolute;
-    top: 183px;
-    right: 754px;
-    width: 176px;
-    z-index: -1;
-  }
 }
 
 .free-position {
@@ -46,6 +39,10 @@
     margin-bottom: 24px;
 
     color: $second-text-light;
+
+    background-image: url(../img/free-shape.png);
+    background-repeat: no-repeat;
+    background-position: 240px 42px;
   }
 
   &__text {

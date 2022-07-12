@@ -11,6 +11,10 @@
     text-align: center;
 
     color: $second-text-light;
+
+    background-image: url(../img/client-shape.png);
+    background-repeat: no-repeat;
+    background-position: 567px 35px;
   }
 
   &__text {
@@ -22,14 +26,6 @@
     text-align: center;
     opacity: 0.8;
     margin-bottom: 60px;
-  }
-
-  &__shape {
-    position: absolute;
-    top: 36px;
-    right: 427px;
-    width: 176px;
-    z-index: -1;
   }
 
   &__blue {

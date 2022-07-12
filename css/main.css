@@ -284,7 +284,7 @@ img {
 
 body {
   font-family: "Poppins", sans-serif;
-  padding-top: 80px;
+  padding-top: 111px;
   color: #404040;
   background-color: #ffffff;
 }
@@ -451,7 +451,7 @@ body {
 }
 
 .hero-content {
-  width: 800px;
+  max-width: 800px;
   margin: 0 auto;
   text-align: center;
 }
@@ -535,6 +535,9 @@ body {
   text-transform: capitalize;
   margin-bottom: 20px;
   color: #18063c;
+  background-image: url(../img/features-center-line.png);
+  background-repeat: no-repeat;
+  background-position: 582px 31px;
 }
 .features__text {
   font-family: "Inter", sans-serif;
@@ -552,13 +555,6 @@ body {
   top: -124px;
   left: -292px;
   width: 172px;
-}
-.features__img-center {
-  position: absolute;
-  top: 31px;
-  right: 413px;
-  width: 176px;
-  z-index: -1;
 }
 .features__img-rocket {
   position: absolute;
@@ -584,10 +580,13 @@ body {
   border-radius: 48px;
   width: 369px;
   padding: 28px 69px 28px 28px;
-  background-color: #70d0dc;
+  background-color: #ccc;
 }
 .features-list__item:not(:last-child) {
   margin-right: 32px;
+}
+.features-list__item--blue {
+  background-color: #70d0dc;
 }
 .features-list__item--purple {
   background-color: #7562e0;
@@ -636,13 +635,6 @@ body {
   padding-top: 185px;
   padding-bottom: 60px;
 }
-.analytics__img {
-  position: absolute;
-  top: 120px;
-  right: 142px;
-  width: 176px;
-  z-index: -1;
-}
 
 .analytics-position {
   position: relative;
@@ -662,7 +654,6 @@ body {
 
 .analytics-rightblock {
   width: 568px;
-  height: 720px;
 }
 .analytics-rightblock__title {
   font-style: normal;
@@ -671,6 +662,9 @@ body {
   line-height: 1.42;
   margin-bottom: 20px;
   color: #18063c;
+  background-image: url(../img/features-center-line.png);
+  background-repeat: no-repeat;
+  background-position: 253px 39px;
 }
 .analytics-rightblock__text {
   font-family: "Inter", sans-serif;
@@ -725,6 +719,9 @@ body {
   line-height: 1.46;
   margin-bottom: 20px;
   color: #18063c;
+  background-image: url(../img/tracker-line.png);
+  background-repeat: no-repeat;
+  background-position: 217px 35px;
 }
 .tracker__text {
   font-family: "Inter", sans-serif;
@@ -767,13 +764,6 @@ body {
   top: -186px;
   right: -561px;
   width: 438px;
-}
-.tracker__img-line {
-  position: absolute;
-  top: 35px;
-  left: 218px;
-  width: 176px;
-  z-index: -1;
 }
 .tracker__img-one {
   position: absolute;
@@ -847,6 +837,9 @@ body {
   margin-bottom: 20px;
   text-align: center;
   color: #18063c;
+  background-image: url(../img/price-line.png);
+  background-repeat: no-repeat;
+  background-position: 744px 35px;
 }
 .price__text {
   font-family: "Inter", sans-serif;
@@ -863,13 +856,6 @@ body {
   bottom: 3px;
   left: -542px;
   width: 409px;
-}
-.price__img-line {
-  position: absolute;
-  top: 35px;
-  right: 250px;
-  width: 176px;
-  z-index: -1;
 }
 .price__img-right {
   position: absolute;
@@ -1048,13 +1034,6 @@ body {
   padding-bottom: 80px;
   background-color: #f8fefe;
 }
-.partners__img {
-  position: absolute;
-  top: 160px;
-  right: 236px;
-  width: 176px;
-  z-index: -1;
-}
 
 .partners-position {
   position: relative;
@@ -1085,7 +1064,12 @@ body {
   border-radius: 40px;
   width: 240px;
   height: 152px;
+  transform: scale(1);
+  transition: transform 250ms linear;
   background-color: rgba(243, 83, 37, 0.1);
+}
+.partners-leftblock__container--one:hover, .partners-leftblock__container--one:focus {
+  transform: scale(1.02);
 }
 .partners-leftblock__container--two {
   top: 88px;
@@ -1093,7 +1077,12 @@ body {
   border-radius: 48px;
   width: 315px;
   height: 204px;
+  transform: scale(1);
+  transition: transform 250ms linear;
   background-color: rgba(51, 214, 100, 0.1);
+}
+.partners-leftblock__container--two:hover, .partners-leftblock__container--two:focus {
+  transform: scale(1.02);
 }
 .partners-leftblock__container--three {
   top: 206px;
@@ -1101,7 +1090,12 @@ body {
   border-radius: 54px;
   width: 358px;
   height: 239px;
+  transform: scale(1);
+  transition: transform 250ms linear;
   background-color: rgba(255, 186, 0, 0.1);
+}
+.partners-leftblock__container--three:hover, .partners-leftblock__container--three:focus {
+  transform: scale(1.02);
 }
 .partners-leftblock__container--four {
   bottom: 57px;
@@ -1109,7 +1103,12 @@ body {
   border-radius: 54px;
   width: 385px;
   height: 243px;
+  transform: scale(1);
+  transition: transform 250ms linear;
   background-color: rgba(66, 133, 244, 0.1);
+}
+.partners-leftblock__container--four:hover, .partners-leftblock__container--four:focus {
+  transform: scale(1.02);
 }
 .partners-leftblock__container--five {
   bottom: 0;
@@ -1117,7 +1116,12 @@ body {
   border-radius: 48px;
   width: 240px;
   height: 152px;
+  transform: scale(1);
+  transition: transform 250ms linear;
   background-color: rgba(28, 96, 191, 0.1);
+}
+.partners-leftblock__container--five:hover, .partners-leftblock__container--five:focus {
+  transform: scale(1.02);
 }
 .partners-leftblock__img-one {
   width: 48px;
@@ -1146,6 +1150,9 @@ body {
   line-height: 1.46;
   margin-bottom: 24px;
   color: #18063c;
+  background-image: url(/../img/price-line.png);
+  background-repeat: no-repeat;
+  background-position: 157px 35px;
 }
 .partners-rightblock__text {
   font-family: "Inter", sans-serif;
@@ -1180,6 +1187,9 @@ body {
   margin-bottom: 20px;
   text-align: center;
   color: #18063c;
+  background-image: url(../img/client-shape.png);
+  background-repeat: no-repeat;
+  background-position: 567px 35px;
 }
 .client__text {
   font-family: "Inter", sans-serif;
@@ -1190,13 +1200,6 @@ body {
   text-align: center;
   opacity: 0.8;
   margin-bottom: 60px;
-}
-.client__shape {
-  position: absolute;
-  top: 36px;
-  right: 427px;
-  width: 176px;
-  z-index: -1;
 }
 .client__blue {
   position: absolute;
@@ -1336,13 +1339,6 @@ body {
   left: -430px;
   width: 422px;
 }
-.free__img-line {
-  position: absolute;
-  top: 183px;
-  right: 754px;
-  width: 176px;
-  z-index: -1;
-}
 
 .free-position {
   position: relative;
@@ -1365,6 +1361,9 @@ body {
   line-height: 1.46;
   margin-bottom: 24px;
   color: #18063c;
+  background-image: url(../img/free-shape.png);
+  background-repeat: no-repeat;
+  background-position: 240px 42px;
 }
 .free-leftblock__text {
   font-family: "Inter", sans-serif;
@@ -1488,10 +1487,11 @@ body {
   display: flex;
 }
 .footer-soc-list__item:not(:last-child) {
-  margin-right: 37px;
+  margin-right: 18px;
 }
 .footer-soc-list__link {
   height: 40px;
+  width: 40px;
   border-radius: 50%;
   display: flex;
   justify-content: center;

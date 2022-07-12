@@ -51,7 +51,7 @@
   z-index: 1;
 }
 .hero-content {
-  width: 800px;
+  max-width: 800px;
   margin: 0 auto;
   text-align: center;
   &__clock {

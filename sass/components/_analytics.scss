@@ -1,14 +1,6 @@
 .analytics {
   padding-top: 185px;
   padding-bottom: 60px;
-
-  &__img {
-    position: absolute;
-    top: 120px;
-    right: 142px;
-    width: 176px;
-    z-index: -1;
-  }
 }
 
 .analytics-position {
@@ -33,7 +25,7 @@
 
 .analytics-rightblock {
   width: 568px;
-  height: 720px;
+
   &__title {
     font-style: normal;
     font-weight: 600;
@@ -42,6 +34,10 @@
     margin-bottom: 20px;
 
     color: $second-text-light;
+
+    background-image: url(../img/features-center-line.png);
+    background-repeat: no-repeat;
+    background-position: 253px 39px;
   }
 
   &__text {

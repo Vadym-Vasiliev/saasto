@@ -3,14 +3,6 @@
   padding-bottom: 80px;
 
   background-color: $blue-light-second;
-
-  &__img {
-    position: absolute;
-    top: 160px;
-    right: 236px;
-    width: 176px;
-    z-index: -1;
-  }
 }
 
 .partners-position {
@@ -43,7 +35,15 @@
       width: 240px;
       height: 152px;
 
+      transform: scale(1);
+      transition: transform 250ms linear;
+
       background-color: rgba(243, 83, 37, 0.1);
+
+      &:hover,
+      &:focus {
+        transform: scale(1.02);
+      }
     }
 
     &--two {
@@ -53,7 +53,15 @@
       width: 315px;
       height: 204px;
 
+      transform: scale(1);
+      transition: transform 250ms linear;
+
       background-color: rgba(51, 214, 100, 0.1);
+
+      &:hover,
+      &:focus {
+        transform: scale(1.02);
+      }
     }
     &--three {
       top: 206px;
@@ -62,7 +70,15 @@
       width: 358px;
       height: 239px;
 
+      transform: scale(1);
+      transition: transform 250ms linear;
+
       background-color: rgba(255, 186, 0, 0.1);
+
+      &:hover,
+      &:focus {
+        transform: scale(1.02);
+      }
     }
     &--four {
       bottom: 57px;
@@ -71,7 +87,15 @@
       width: 385px;
       height: 243px;
 
+      transform: scale(1);
+      transition: transform 250ms linear;
+
       background-color: rgba(66, 133, 244, 0.1);
+
+      &:hover,
+      &:focus {
+        transform: scale(1.02);
+      }
     }
     &--five {
       bottom: 0;
@@ -80,7 +104,15 @@
       width: 240px;
       height: 152px;
 
+      transform: scale(1);
+      transition: transform 250ms linear;
+
       background-color: rgba(28, 96, 191, 0.1);
+
+      &:hover,
+      &:focus {
+        transform: scale(1.02);
+      }
     }
   }
 
@@ -113,6 +145,10 @@
     margin-bottom: 24px;
 
     color: $second-text-light;
+
+    background-image: url(/../img/price-line.png);
+    background-repeat: no-repeat;
+    background-position: 157px 35px;
   }
 
   &__text {
