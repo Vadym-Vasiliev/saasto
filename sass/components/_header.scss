@@ -10,6 +10,9 @@
   //
   background-color: $second-bgc;
 
+  @include tablet {
+    padding-bottom: 30px;
+  }
   &__link {
     transform: scaleX(1);
     transition: transform 250ms linear;
@@ -23,23 +26,128 @@
     width: 179px;
     height: 40px;
   }
+
+  &__btn {
+    transform: scale(1);
+    transition: transform 250ms linear;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.1);
+
+      .header__svg {
+        fill: $accent;
+      }
+    }
+    @include tablet {
+      display: none;
+    }
+    @include desktop {
+      display: none;
+    }
+
+    &.is-open {
+      z-index: 3;
+    }
+  }
+
+  &__cross {
+    display: none;
+
+    .header__btn.is-open & {
+      display: block;
+    }
+  }
+
+  .header__btn.is-open .header__burger {
+    display: none;
+  }
+
+  &__svg {
+    transition: fill 250ms linear;
+    width: 80px;
+    height: 80px;
+    fill: $second-text;
+  }
+}
+
+.menu-box {
+  @include mobile {
+    display: none;
+  }
+  &.is-open {
+    @include mobile {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 60px;
+
+      background-color: #fff;
+    }
+  }
+
+  @include tablet {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  @include desktop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .header-content {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   height: 80px;
+
+  @include desktop {
+    justify-content: space-between;
+  }
+  @include tablet {
+    height: 100px;
+    gap: 20px;
+  }
+
+  @include mobile {
+    justify-content: space-between;
+  }
 }
 
 .header-list {
   display: flex;
-  //
-  margin-right: -102px;
+
+  @include desktop {
+    margin-right: 100px;
+  }
+
+  @include mobile {
+    flex-direction: column;
+  }
+
   //
   &__item {
     &:not(:last-child) {
       margin-right: 48px;
+
+      @include tablet {
+        margin-right: 28px;
+      }
+
+      @include mobile {
+        margin-bottom: 30px;
+        margin-right: 0;
+      }
     }
   }
   &__link {
@@ -49,6 +157,15 @@
     font-size: 18px;
     line-height: 1.33;
     display: block;
+
+    @include tablet {
+      font-size: 18px;
+    }
+
+    @include mobile {
+      font-size: 50px;
+      display: inline-block;
+    }
 
     transform: scale(1);
     transition: transform 250ms linear;
@@ -85,6 +202,16 @@
 
 .header-list-btn {
   display: flex;
+
+  @include tablet {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @include mobile {
+    justify-content: space-evenly;
+  }
+
   &__item {
     &:not(:last-child) {
       margin-right: 6px;
@@ -96,6 +223,15 @@
     border-radius: 34px;
     transform: scale(1);
     transition: all 250ms linear;
+
+    @include tablet {
+      padding: 8px 16px;
+    }
+
+    @include mobile {
+      padding: 24px 38px;
+      font-size: 30px;
+    }
 
     &:hover,
     &:focus {

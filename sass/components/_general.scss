@@ -4,6 +4,10 @@ body {
 
   color: $main-text;
   background-color: $main-bgc;
+
+  &.menu-open {
+    overflow: hidden;
+  }
 }
 
 .container {
@@ -11,6 +15,16 @@ body {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+
+  @include mobile {
+    width: 480px;
+  }
+  @include tablet {
+    width: 768px;
+  }
+  @include desktop {
+    width: 1200px;
+  }
 }
 
 .visually-hidden {
@@ -36,4 +50,8 @@ body {
 
   color: $accent;
   background-color: transparent;
+
+  @include tablet {
+    font-size: 22px;
+  }
 }
