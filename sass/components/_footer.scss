@@ -7,6 +7,11 @@
     padding-bottom: 40px;
   }
 
+  @include tablet {
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
+
   &__link {
     transform: scale(1);
     transition: transform 250ms linear;

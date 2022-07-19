@@ -20,6 +20,10 @@
       right: -366px;
       z-index: -1;
     }
+
+    @include tablet {
+      display: none;
+    }
   }
   &__img-left {
     position: absolute;
@@ -30,6 +34,12 @@
     @include mobile {
       top: -200px;
       left: -180px;
+      z-index: -1;
+    }
+
+    @include tablet {
+      top: 100px;
+      left: -143px;
       z-index: -1;
     }
   }
@@ -119,6 +129,9 @@
 
     @include mobile {
       display: none;
+    }
+    @include tablet {
+      margin-left: -50px;
     }
   }
 }
