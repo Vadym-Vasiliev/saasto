@@ -4,17 +4,34 @@
 
   background-color: $second-bgc;
 
+  @include mobile {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
   &__img-right {
     position: absolute;
     top: 186px;
     right: -530px;
     width: 632px;
+
+    @include mobile {
+      top: 265px;
+      right: -366px;
+      z-index: -1;
+    }
   }
   &__img-left {
     position: absolute;
     top: -91px;
     left: -430px;
     width: 422px;
+
+    @include mobile {
+      top: -200px;
+      left: -180px;
+      z-index: -1;
+    }
   }
 }
 
@@ -99,5 +116,9 @@
 .free-rightblock {
   &__img {
     width: 405px;
+
+    @include mobile {
+      display: none;
+    }
   }
 }
