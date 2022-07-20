@@ -1,6 +1,14 @@
 .analytics {
   padding-top: 185px;
   padding-bottom: 60px;
+
+  @include tablet {
+    padding-top: 100px;
+  }
+
+  @include mobile {
+    padding-top: 60px;
+  }
 }
 
 .analytics-position {
@@ -18,8 +26,17 @@
     // margin-left: -400px;
 
     margin-right: 34px;
-    margin-left: -373px;
+    margin-left: -600px;
     margin-top: -37px;
+
+    @include tablet {
+      margin-top: 0;
+      margin-right: -100px;
+    }
+
+    @include mobile {
+      display: none;
+    }
   }
 }
 
@@ -38,6 +55,15 @@
     background-image: url(../img/features-center-line.png);
     background-repeat: no-repeat;
     background-position: 253px 39px;
+
+    @include tablet {
+      max-width: 525px;
+      background-position: 113px 39px;
+    }
+
+    @include mobile {
+      background-position: 113px 39px;
+    }
   }
 
   &__text {
@@ -48,6 +74,10 @@
     line-height: 2;
     opacity: 0.8;
     margin-bottom: 48px;
+
+    @include tablet {
+      max-width: 483px;
+    }
   }
 }
 
