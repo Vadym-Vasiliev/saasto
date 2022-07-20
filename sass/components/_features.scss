@@ -56,6 +56,16 @@
     top: -124px;
     left: -292px;
     width: 172px;
+
+    @include tablet {
+      top: -138px;
+      left: 0;
+    }
+
+    @include mobile {
+      top: -224px;
+      left: 100px;
+    }
   }
 
   &__img-rocket {

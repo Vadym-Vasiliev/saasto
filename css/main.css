@@ -660,9 +660,29 @@ body.menu-open {
 .expertises {
   padding-top: 94px;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .expertises {
+    padding-top: 80px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .expertises {
+    padding-top: 60px;
+  }
+}
 
 .expertises-content {
   margin-right: 324px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .expertises-content {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .expertises-content {
+    margin-right: 0;
+  }
 }
 
 .expertises-list {
@@ -675,6 +695,16 @@ body.menu-open {
 }
 .expertises-list__item:not(:last-child) {
   margin-right: 180px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .expertises-list__item:not(:last-child) {
+    margin-right: 90px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .expertises-list__item:not(:last-child) {
+    margin-right: 60px;
+  }
 }
 .expertises-list__span {
   font-style: normal;
@@ -750,6 +780,18 @@ body.menu-open {
   top: -124px;
   left: -292px;
   width: 172px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .features__img-line {
+    top: -138px;
+    left: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .features__img-line {
+    top: -224px;
+    left: 100px;
+  }
 }
 .features__img-rocket {
   position: absolute;

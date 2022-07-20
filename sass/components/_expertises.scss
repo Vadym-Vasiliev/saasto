@@ -1,10 +1,26 @@
 .expertises {
   padding-top: 94px;
+
+  @include tablet {
+    padding-top: 80px;
+  }
+
+  @include mobile {
+    padding-top: 60px;
+  }
 }
 
 .expertises-content {
   //
   margin-right: 324px;
+
+  @include tablet {
+    margin-right: 0;
+  }
+
+  @include mobile {
+    margin-right: 0;
+  }
   //
 }
 
@@ -17,6 +33,14 @@
     text-align: center;
     &:not(:last-child) {
       margin-right: 180px;
+
+      @include tablet {
+        margin-right: 90px;
+      }
+
+      @include mobile {
+        margin-right: 60px;
+      }
     }
   }
 
