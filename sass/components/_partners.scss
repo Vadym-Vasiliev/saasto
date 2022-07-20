@@ -3,6 +3,15 @@
   padding-bottom: 80px;
 
   background-color: $blue-light-second;
+
+  @include tablet {
+    padding-top: 80px;
+  }
+
+  @include mobile {
+    padding-top: 60px;
+    padding-bottom: 419px;
+  }
 }
 
 .partners-position {
@@ -13,6 +22,20 @@
 .partners-content {
   display: flex;
   align-items: center;
+
+  @include tablet {
+    flex-direction: column-reverse;
+    text-align: center;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  @include mobile {
+    flex-direction: column-reverse;
+    text-align: center;
+    justify-content: center;
+    gap: 40px;
+  }
 }
 
 .partners-leftblock {
@@ -21,6 +44,18 @@
   height: 651px;
   margin-right: 100px;
   margin-left: -300px;
+
+  @include tablet {
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 768px;
+  }
+
+  @include mobile {
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 480px;
+  }
 
   &__container {
     position: absolute;
@@ -44,6 +79,11 @@
       &:focus {
         transform: scale(1.02);
       }
+
+      @include mobile {
+        top: 214px;
+        left: 240px;
+      }
     }
 
     &--two {
@@ -62,6 +102,11 @@
       &:focus {
         transform: scale(1.02);
       }
+
+      @include mobile {
+        top: 0;
+        left: 0;
+      }
     }
     &--three {
       top: 206px;
@@ -78,6 +123,11 @@
       &:hover,
       &:focus {
         transform: scale(1.02);
+      }
+
+      @include mobile {
+        top: 376px;
+        left: 0;
       }
     }
     &--four {
@@ -96,6 +146,9 @@
       &:focus {
         transform: scale(1.02);
       }
+      @include mobile {
+        bottom: -217px;
+      }
     }
     &--five {
       bottom: 0;
@@ -112,6 +165,11 @@
       &:hover,
       &:focus {
         transform: scale(1.02);
+      }
+
+      @include mobile {
+        bottom: -379px;
+        left: 0;
       }
     }
   }
@@ -137,6 +195,10 @@
 .partners-rightblock {
   width: 525px;
   z-index: 1;
+
+  @include mobile {
+    max-width: 480px;
+  }
   &__title {
     font-style: normal;
     font-weight: 600;
@@ -159,7 +221,19 @@
     line-height: 2;
     opacity: 0.8;
     margin-bottom: 48px;
-    width: 471px;
+    max-width: 471px;
+
+    @include tablet {
+      max-width: 471px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @include mobile {
+      max-width: 471px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   &__btn {
