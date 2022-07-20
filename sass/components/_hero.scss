@@ -6,6 +6,15 @@
   background-color: $second-bgc;
   overflow: hidden;
 
+  @include tablet {
+    padding-top: 120px;
+    padding-bottom: 90px;
+  }
+  @include mobile {
+    padding-top: 100px;
+    padding-bottom: 60px;
+  }
+
   &__title {
     font-style: normal;
     font-weight: 700;
@@ -23,11 +32,20 @@
     font-size: 20px;
     line-height: 1.8;
     opacity: 0.8;
-    width: 595px;
+    max-width: 595px;
     margin: 0 auto;
     margin-bottom: 68px;
 
     color: $text-4020;
+
+    @include tablet {
+      margin-bottom: 30px;
+    }
+
+    @include mobile {
+      max-width: 480px;
+      margin-bottom: 30px;
+    }
   }
 
   &__btn {
@@ -61,6 +79,18 @@
     top: -91px;
     left: -1px;
     width: 162px;
+
+    @include tablet {
+      top: 125px;
+      left: 0;
+      z-index: -1;
+    }
+
+    @include mobile {
+      top: -72px;
+      left: 0px;
+      z-index: -1;
+    }
   }
 
   &__fon-line {
@@ -75,6 +105,15 @@
     //
 
     z-index: -1;
+
+    @include tablet {
+      left: 66px;
+      top: -143px;
+    }
+
+    @include mobile {
+      left: -117px;
+    }
   }
 
   &__mobile-black {
@@ -84,6 +123,12 @@
     width: 503px;
     left: -348px;
     top: 59px;
+    @include tablet {
+      display: none;
+    }
+    @include mobile {
+      display: none;
+    }
   }
 
   &__notebook {
@@ -93,6 +138,18 @@
     right: 119px;
     bottom: -18px;
     width: 178px;
+
+    @include tablet {
+      right: 0;
+      bottom: -72px;
+      z-index: -1;
+    }
+
+    @include mobile {
+      right: -67px;
+      bottom: -50px;
+      z-index: -1;
+    }
   }
 
   &__mobile-right {
@@ -103,5 +160,12 @@
     bottom: -641px;
     right: -478px;
     width: 685px;
+
+    @include tablet {
+      display: none;
+    }
+    @include mobile {
+      display: none;
+    }
   }
 }
