@@ -2,6 +2,13 @@
   // padding-top: 120px;
   padding-top: 222px;
 
+  @include tablet {
+    padding-top: 100px;
+  }
+  @include mobile {
+    padding-top: 60px;
+  }
+
   &__title {
     font-style: normal;
     font-weight: 600;
@@ -15,6 +22,14 @@
     background-image: url(../img/features-center-line.png);
     background-repeat: no-repeat;
     background-position: 582px 31px;
+
+    @include tablet {
+      background-position: 414px 32px;
+    }
+
+    @include mobile {
+      background-position: 29px 103px;
+    }
   }
 
   &__text {
@@ -27,6 +42,10 @@
     width: 659px;
     margin: 0 auto;
     margin-bottom: 64px;
+
+    @include mobile {
+      max-width: 423px;
+    }
   }
 
   &__img-line {
@@ -46,6 +65,17 @@
     top: -19px;
     right: -28px;
     width: 197px;
+    z-index: -1;
+
+    @include tablet {
+      top: 109px;
+      right: 500px;
+    }
+
+    @include mobile {
+      top: 198px;
+      right: 13px;
+    }
   }
 }
 
@@ -61,6 +91,14 @@
   display: flex;
   justify-content: center;
 
+  @include tablet {
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  @include mobile {
+    flex-wrap: wrap;
+  }
+
   &__item {
     box-shadow: 14px 20px 48px rgba(25, 15, 44, 0.06);
     border-radius: 48px;
@@ -70,7 +108,24 @@
     background-color: #ccc;
 
     &:not(:last-child) {
-      margin-right: 32px;
+      @include desktop {
+        margin-right: 32px;
+      }
+
+      @include mobile {
+        margin-bottom: 20px;
+      }
+    }
+
+    @include tablet {
+      padding: 20px;
+      max-width: 300px;
+      width: calc((100% - 30px - 30px) / 2);
+      margin: 15px;
+    }
+
+    @include mobile {
+      padding: 40px;
     }
 
     &--blue {
@@ -98,6 +153,10 @@
     width: 305px;
 
     color: $white;
+
+    @include tablet {
+      max-width: 272px;
+    }
   }
   &__text {
     font-family: $font-inter;
