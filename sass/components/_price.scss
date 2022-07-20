@@ -2,6 +2,16 @@
   padding-top: 178px;
   padding-bottom: 120px;
 
+  @include tablet {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  @include mobile {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
   &__title {
     font-style: normal;
     font-weight: 600;
@@ -15,6 +25,14 @@
     background-image: url(../img/price-line.png);
     background-repeat: no-repeat;
     background-position: 744px 35px;
+
+    @include tablet {
+      background-position: 528px 34px;
+    }
+
+    @include mobile {
+      background-position: 211px 104px;
+    }
   }
 
   &__text {
@@ -41,6 +59,14 @@
     top: 178px;
     width: 223px;
     z-index: -1;
+    @include tablet {
+      right: 501px;
+      top: -25px;
+    }
+
+    @include mobile {
+      display: none;
+    }
   }
 
   &__img-snake {
@@ -49,6 +75,15 @@
     right: -57px;
     width: 136px;
     z-index: -2;
+
+    @include tablet {
+      display: none;
+    }
+
+    @include mobile {
+      top: 0;
+      right: 300px;
+    }
   }
 }
 
@@ -62,6 +97,14 @@
   justify-content: center;
   margin-bottom: 62px;
   margin-right: 74px;
+
+  @include tablet {
+    margin-right: 0;
+  }
+
+  @include mobile {
+    margin-right: 0;
+  }
 
   &__span {
     font-style: normal;
@@ -117,17 +160,34 @@
   display: flex;
   justify-content: center;
   text-align: center;
+
+  @include mobile {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
   &__item {
     width: 470px;
-    height: 608px;
+
     border: 1px solid #ff553e;
     border-radius: 110px;
     padding: 64px;
+
+    @include tablet {
+      padding: 64px 38px;
+    }
+
+    @include mobile {
+      padding: 38px 38px;
+    }
 
     transform: scale(1);
     transition: transform 250ms linear;
     &:not(:last-child) {
       margin-right: 30px;
+
+      @include mobile {
+        margin-right: 0;
+      }
     }
 
     &--second {
@@ -146,6 +206,10 @@
     font-size: 48px;
     line-height: 1;
     margin-bottom: 56px;
+
+    @include mobile {
+      margin-bottom: 30px;
+    }
 
     &--second {
       color: $white;
@@ -214,6 +278,10 @@
     color: $white;
     background-color: $accent;
 
+    @include tablet {
+      padding: 24px 30px;
+    }
+
     &:hover,
     &:focus {
       transform: scale(1.05);
@@ -228,10 +296,16 @@
 
 .price-block-text {
   margin-bottom: 64px;
+  @include mobile {
+    margin-bottom: 30px;
+  }
 }
 
 .price-span-block {
   margin-bottom: 64px;
   display: flex;
   justify-content: center;
+  @include mobile {
+    margin-bottom: 30px;
+  }
 }
