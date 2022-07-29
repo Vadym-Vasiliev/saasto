@@ -15,6 +15,10 @@
     right: -530px;
     width: 632px;
 
+    opacity: 0;
+    transition: transform 500ms linear, opacity 500ms linear;
+    transform: translateX(100%);
+
     @include mobile {
       top: 265px;
       right: -366px;
@@ -30,6 +34,10 @@
     top: -91px;
     left: -430px;
     width: 422px;
+
+    opacity: 0;
+    transition: transform 500ms linear, opacity 500ms linear;
+    transform: translateX(-100%);
 
     @include mobile {
       top: -200px;
@@ -70,6 +78,10 @@
     background-image: url(../img/free-shape.png);
     background-repeat: no-repeat;
     background-position: 240px 42px;
+
+    opacity: 0;
+    transition: transform 500ms linear, opacity 500ms linear;
+    transform: translateY(-100%);
   }
 
   &__text {
@@ -80,6 +92,10 @@
     line-height: 1.8;
     opacity: 0.8;
     margin-bottom: 48px;
+
+    opacity: 0;
+    transition: transform 500ms linear, opacity 500ms linear;
+    transform: translateY(-100%);
   }
 }
 
@@ -89,6 +105,14 @@
   &__item {
     &:not(:last-child) {
       margin-right: 20px;
+    }
+
+    opacity: 0;
+    transition: transform 500ms linear, opacity 500ms linear;
+    transform: translateX(100%);
+
+    &:nth-child(2) {
+      transition-delay: 0.3s;
     }
   }
 
@@ -127,6 +151,10 @@
   &__img {
     width: 405px;
 
+    opacity: 0;
+    transition: transform 500ms linear, opacity 500ms linear;
+    transform: translateY(100%);
+
     @include mobile {
       display: none;
     }
@@ -134,4 +162,20 @@
       margin-left: -50px;
     }
   }
+}
+
+// animation
+
+.animation-left,
+.animation-right,
+.animation-down,
+.animation-top {
+  opacity: 1;
+  transition: transform 500ms linear, opacity 500ms linear;
+  transform: translateX(0);
+}
+
+.animation-down,
+.animation-top {
+  transform: translateY(0);
 }

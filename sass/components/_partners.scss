@@ -45,6 +45,10 @@
   margin-right: 100px;
   margin-left: -300px;
 
+  opacity: 0;
+  transition: transform 500ms linear, opacity 500ms linear;
+  transform: translateX(-100%);
+
   @include tablet {
     margin-left: 0;
     margin-right: 0;
@@ -211,6 +215,11 @@
     background-image: url(/../img/price-line.png);
     background-repeat: no-repeat;
     background-position: 157px 35px;
+
+    opacity: 0;
+    transition: transform 500ms linear, opacity 500ms linear;
+    transform: translateY(-100%);
+    transition-delay: 0.3s;
   }
 
   &__text {
@@ -222,6 +231,11 @@
     opacity: 0.8;
     margin-bottom: 48px;
     max-width: 471px;
+
+    opacity: 0;
+    transition: transform 500ms linear, opacity 500ms linear;
+    transform: translateY(-100%);
+    transition-delay: 0.6s;
 
     @include tablet {
       max-width: 471px;
@@ -247,5 +261,29 @@
     &:focus {
       transform: scale(1.05);
     }
+
+    opacity: 0;
+    transition: transform 500ms linear, opacity 500ms linear;
+    transform: translateY(-100%);
+    transition-delay: 0.9s;
+  }
+}
+
+.animation-left,
+.animation-top {
+  opacity: 1;
+  transition: transform 500ms linear, opacity 500ms linear;
+  transform: translateX(0);
+}
+
+.animation-top {
+  transform: translateY(0);
+
+  &:nth-child(2) {
+    transition-delay: 0.3s;
+  }
+
+  &:nth-child(3) {
+    transition-delay: 0.6s;
   }
 }

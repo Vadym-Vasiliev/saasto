@@ -26,6 +26,10 @@
     background-repeat: no-repeat;
     background-position: 567px 35px;
 
+    opacity: 0;
+    transition: transform 500ms linear, opacity 500ms linear;
+    transform: translateY(-100%);
+
     @include mobile {
       background-position: 269px 40px;
     }
@@ -45,6 +49,10 @@
     opacity: 0.8;
     margin-bottom: 60px;
 
+    opacity: 0;
+    transition: transform 500ms linear, opacity 500ms linear;
+    transform: translateY(-100%);
+
     @include mobile {
       margin-bottom: 30px;
     }
@@ -55,6 +63,10 @@
     top: -134px;
     left: -318px;
     width: 220px;
+
+    opacity: 0;
+    transition: transform 500ms linear, opacity 500ms linear;
+    transform: translateX(-100%);
   }
 
   &__purple {
@@ -62,6 +74,10 @@
     bottom: -21px;
     left: -111px;
     width: 196px;
+
+    opacity: 0;
+    transition: transform 500ms linear, opacity 500ms linear;
+    transform: translateX(-100%);
 
     @include mobile {
       bottom: 570px;
@@ -81,6 +97,10 @@
     width: 147px;
     z-index: -1;
 
+    opacity: 0;
+    transition: transform 500ms linear, opacity 500ms linear;
+    transform: translateX(-100%);
+
     @include mobile {
       top: 130px;
       left: 300px;
@@ -97,6 +117,10 @@
     bottom: -32px;
     right: -236px;
     width: 126px;
+
+    opacity: 0;
+    transition: transform 500ms linear, opacity 500ms linear;
+    transform: translateX(100%);
 
     @include mobile {
       bottom: 30px;
@@ -116,6 +140,10 @@
     right: -272px;
     width: 94px;
     z-index: -1;
+
+    opacity: 0;
+    transition: transform 500ms linear, opacity 500ms linear;
+    transform: translateX(100%);
 
     @include mobile {
       bottom: 200px;
@@ -156,6 +184,10 @@
   margin-left: 71px;
   background-color: $second-bgc;
 
+  opacity: 0;
+  transition: transform 500ms linear, opacity 500ms linear;
+  transform: translateY(100%);
+
   @include tablet {
     margin-right: 0;
     margin-left: 0;
@@ -176,6 +208,10 @@
     line-height: 1.8;
     opacity: 0.8;
     margin-bottom: 36px;
+
+    opacity: 0;
+    transition: transform 500ms linear, opacity 500ms linear;
+    transform: translateX(100%);
   }
 
   &__title {
@@ -187,6 +223,10 @@
     margin-bottom: 16px;
 
     color: $text-3836;
+
+    opacity: 0;
+    transition: transform 500ms linear, opacity 500ms linear;
+    transform: translateX(100%);
   }
 
   &__under-text {
@@ -199,12 +239,20 @@
     margin-bottom: 28px;
 
     color: $text-3836;
+
+    opacity: 0;
+    transition: transform 500ms linear, opacity 500ms linear;
+    transform: translateX(100%);
   }
 }
 
 .client-block-span {
   display: flex;
   align-items: center;
+
+  opacity: 0;
+  transition: transform 500ms linear, opacity 500ms linear;
+  transform: translateX(100%);
 
   @include mobile {
     justify-content: center;
@@ -248,5 +296,36 @@
 
       background-color: rgba(255, 85, 62, 0.2);
     }
+  }
+}
+
+// animation
+
+.animation-left,
+.animation-right,
+.animation-top,
+.animation-down {
+  opacity: 1;
+  transition: transform 500ms linear, opacity 500ms linear;
+  transform: translateX(0);
+}
+
+.animation-top {
+  transform: translateY(0);
+}
+
+.animation-down {
+  transform: translateY(0);
+}
+
+.animation-left {
+  &:nth-child(2) {
+    transition-delay: 0.3s;
+  }
+  &:nth-child(3) {
+    transition-delay: 0.6s;
+  }
+  &:nth-child(4) {
+    transition-delay: 0.9s;
   }
 }

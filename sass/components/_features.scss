@@ -10,12 +10,16 @@
   }
 
   &__title {
+    opacity: 0;
     font-style: normal;
     font-weight: 600;
     font-size: 48px;
     line-height: 1.46;
     text-transform: capitalize;
     margin-bottom: 20px;
+
+    transition: transform 500ms linear, opacity 500ms linear;
+    transform: translateY(-100%);
 
     color: $second-text-light;
 
@@ -42,6 +46,10 @@
     width: 659px;
     margin: 0 auto;
     margin-bottom: 64px;
+    opacity: 0;
+
+    transition: transform 500ms linear, opacity 500ms linear;
+    transform: translateY(100%);
 
     @include mobile {
       max-width: 423px;
@@ -53,9 +61,13 @@
     // top: -100px;
     // left: -300px;
 
+    opacity: 0;
     top: -124px;
     left: -292px;
     width: 172px;
+
+    transition: transform 500ms linear, opacity 500ms linear;
+    transform: translateX(-100%);
 
     @include tablet {
       top: -138px;
@@ -70,12 +82,16 @@
 
   &__img-rocket {
     position: absolute;
+    opacity: 0;
     // top: -22px;
     // right: -55px;
     top: -19px;
     right: -28px;
     width: 197px;
     z-index: -1;
+
+    transition: transform 500ms linear, opacity 500ms linear;
+    transform: translateX(100%);
 
     @include tablet {
       top: 109px;
@@ -110,12 +126,16 @@
   }
 
   &__item {
+    opacity: 0;
     box-shadow: 14px 20px 48px rgba(25, 15, 44, 0.06);
     border-radius: 48px;
     width: 369px;
     padding: 28px 69px 28px 28px;
 
     background-color: #ccc;
+
+    transition: transform 500ms linear, opacity 500ms linear;
+    transform: translateY(100%);
 
     &:not(:last-child) {
       @include desktop {
@@ -193,4 +213,20 @@
   justify-content: center;
 
   background-color: rgba(255, 255, 255, 0.5);
+}
+
+.animation-top,
+.animation-left,
+.animation-right {
+  opacity: 1;
+  transition: transform 500ms linear, opacity 500ms linear;
+  transform: translateY(0);
+}
+
+.animation-left {
+  transform: translateX(0);
+}
+
+.animation-right {
+  transform: translateX(0);
 }

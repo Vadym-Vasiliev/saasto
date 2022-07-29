@@ -17,6 +17,10 @@
     transition: transform 250ms linear;
     display: inline-block;
 
+    opacity: 0;
+    transition: transform 500ms linear, opacity 500ms linear;
+    transform: translateX(-100%);
+
     &:hover,
     &:focus {
       transform: scale(1.05);
@@ -45,6 +49,10 @@
     font-size: 18px;
     line-height: 1.33;
     margin-right: 24px;
+
+    opacity: 0;
+    transition: transform 500ms linear, opacity 500ms linear;
+    transform: translateX(100%);
 
     @include mobile {
       margin-right: 0;
@@ -77,6 +85,10 @@
 .footer-list {
   display: flex;
   margin-left: 54px;
+
+  opacity: 0;
+  transition: transform 500ms linear, opacity 500ms linear;
+  transform: translateY(-100%);
 
   @include mobile {
     margin-left: 0;
@@ -142,6 +154,10 @@
 .footer-soc-list {
   display: flex;
 
+  opacity: 0;
+  transition: transform 500ms linear, opacity 500ms linear;
+  transform: translateX(100%);
+
   &__item {
     &:not(:last-child) {
       margin-right: 18px;
@@ -190,6 +206,10 @@
 .footer-list-under {
   display: flex;
 
+  opacity: 0;
+  transition: transform 500ms linear, opacity 500ms linear;
+  transform: translateX(-100%);
+
   &__item {
     &:not(:last-child) {
       margin-right: 108px;
@@ -237,4 +257,18 @@
       transform-origin: bottom left;
     }
   }
+}
+
+//animation
+
+.animation-left,
+.animation-right,
+.animation-top {
+  opacity: 1;
+  transition: transform 500ms linear, opacity 500ms linear;
+  transform: translateX(0);
+}
+.animation-top {
+  opacity: 1;
+  transform: translateY(0);
 }

@@ -72,6 +72,7 @@
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
+
   &__clock {
     position: absolute;
     // top: -82px;
@@ -123,6 +124,7 @@
     width: 503px;
     left: -348px;
     top: 59px;
+
     @include tablet {
       display: none;
     }

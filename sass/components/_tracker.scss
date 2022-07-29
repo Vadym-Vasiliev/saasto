@@ -26,8 +26,11 @@
     background-image: url(../img/tracker-line.png);
     background-repeat: no-repeat;
     background-position: 217px 35px;
-  }
 
+    opacity: 0;
+    transition: transform 500ms linear, opacity 250ms linear;
+    transform: translateY(-100%);
+  }
   &__text {
     font-family: $font-inter;
     font-style: normal;
@@ -37,6 +40,10 @@
     opacity: 0.8;
     width: 699px;
     margin-bottom: 64px;
+
+    opacity: 0;
+    transition: transform 500ms linear, opacity 250ms linear;
+    transform: translateY(100%);
 
     @include mobile {
       max-width: 480px;
@@ -89,6 +96,10 @@
     top: 235px;
     left: -537px;
     width: 383px;
+
+    opacity: 0;
+    transition: transform 500ms linear, opacity 250ms linear;
+    transform: translateX(-100%);
   }
 
   &__img-right {
@@ -96,6 +107,10 @@
     top: -186px;
     right: -561px;
     width: 438px;
+
+    opacity: 0;
+    transition: transform 500ms linear, opacity 250ms linear;
+    transform: translateX(100%);
   }
 
   &__img-one {
@@ -104,6 +119,9 @@
     right: 109px;
     width: 380px;
     z-index: -1;
+
+    opacity: 0;
+    transition: opacity 1000ms linear;
 
     @include tablet {
       right: 0;
@@ -120,6 +138,9 @@
     right: -298px;
     width: 490px;
     z-index: -1;
+
+    opacity: 0;
+    transition: opacity 1000ms linear;
     @include tablet {
       top: 775px;
       right: 0;
@@ -135,6 +156,9 @@
     right: 111px;
     width: 342px;
     z-index: -1;
+
+    opacity: 0;
+    transition: opacity 1000ms linear;
     @include tablet {
       right: 40px;
     }
@@ -155,6 +179,18 @@
   padding: 0;
   &__item {
     display: flex;
+
+    &:nth-child(2) {
+      transition-delay: 0.3s;
+    }
+    &:nth-child(3) {
+      transition-delay: 0.6s;
+    }
+
+    opacity: 0;
+    transition: transform 500ms linear, opacity 500ms linear;
+    transform: translateX(100%);
+
     @include desktop {
       align-items: center;
     }
@@ -216,4 +252,27 @@
     line-height: 2;
     opacity: 0.8;
   }
+}
+
+.animation-top,
+.animation-left,
+.animation-right {
+  opacity: 1;
+  transition: transform 500ms linear, opacity 500ms linear;
+}
+
+.animation-top {
+  transform: translateY(0);
+}
+
+.animation-left {
+  transform: translateX(0);
+}
+.animation-right {
+  transform: translateX(0);
+}
+
+.animation-opacity {
+  opacity: 1;
+  transition: opacity 1000ms linear;
 }

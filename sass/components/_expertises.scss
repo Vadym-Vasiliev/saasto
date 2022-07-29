@@ -30,7 +30,11 @@
   justify-content: center;
 
   &__item {
+    opacity: 0;
+    transition: transform 250ms linear, opacity 250ms linear;
+    transform: translateX(-100%);
     text-align: center;
+
     &:not(:last-child) {
       margin-right: 180px;
 
@@ -41,6 +45,13 @@
       @include mobile {
         margin-right: 60px;
       }
+    }
+
+    &:nth-child(2) {
+      transition-delay: 0.3s;
+    }
+    &:nth-child(3) {
+      transition-delay: 0.6s;
     }
   }
 
@@ -63,4 +74,10 @@
     line-height: 1;
     opacity: 0.6;
   }
+}
+
+.animation-left {
+  opacity: 1;
+  transition: transform 250ms linear, opacity 250ms linear;
+  transform: translateX(0);
 }
