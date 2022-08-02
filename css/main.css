@@ -604,6 +604,9 @@ body.menu-open {
   line-height: 1.41;
   margin-bottom: 24px;
   color: #1c0e0d;
+  opacity: 0;
+  transition: transform 250ms linear, opacity 250ms linear;
+  transform: translateY(-100%);
 }
 .hero__text {
   font-family: "Inter", sans-serif;
@@ -616,6 +619,9 @@ body.menu-open {
   margin: 0 auto;
   margin-bottom: 68px;
   color: #40201e;
+  opacity: 0;
+  transition: transform 250ms linear, opacity 250ms linear;
+  transform: translateY(100%);
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero__text {
@@ -635,6 +641,9 @@ body.menu-open {
   transition: transform 250ms linear, color 250ms linear, background-color 250ms linear;
   color: #ffffff;
   background-color: #ff553e;
+  opacity: 0;
+  transition: transform 250ms linear, opacity 250ms linear;
+  transform: translateY(100%);
 }
 .hero__btn:hover, .hero__btn:focus {
   transform: scale(1.05);
@@ -655,6 +664,9 @@ body.menu-open {
   top: -91px;
   left: -1px;
   width: 162px;
+  opacity: 0;
+  transition: transform 250ms linear, opacity 250ms linear;
+  transform: translateX(-100%);
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero-content__clock {
@@ -693,6 +705,9 @@ body.menu-open {
   width: 503px;
   left: -348px;
   top: 59px;
+  opacity: 0;
+  transition: transform 250ms linear, opacity 250ms linear;
+  transform: translateX(-100%);
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero-content__mobile-black {
@@ -709,6 +724,9 @@ body.menu-open {
   right: 119px;
   bottom: -18px;
   width: 178px;
+  opacity: 0;
+  transition: transform 250ms linear, opacity 250ms linear;
+  transform: translateX(100%);
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero-content__notebook {
@@ -729,6 +747,9 @@ body.menu-open {
   bottom: -641px;
   right: -478px;
   width: 685px;
+  opacity: 0;
+  transition: transform 250ms linear, opacity 250ms linear;
+  transform: translateX(100%);
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero-content__mobile-right {
@@ -739,6 +760,19 @@ body.menu-open {
   .hero-content__mobile-right {
     display: none;
   }
+}
+
+.animation-left,
+.animation-top,
+.animation-down {
+  opacity: 1;
+  transition: transform 250ms linear, opacity 250ms linear;
+  transform: translateX(0);
+}
+
+.animation-top,
+.animation-down {
+  transform: translateY(0);
 }
 
 .expertises {

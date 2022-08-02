@@ -23,6 +23,10 @@
     margin-bottom: 24px;
 
     color: $second-text;
+
+    opacity: 0;
+    transition: transform 250ms linear, opacity 250ms linear;
+    transform: translateY(-100%);
   }
 
   &__text {
@@ -37,6 +41,10 @@
     margin-bottom: 68px;
 
     color: $text-4020;
+
+    opacity: 0;
+    transition: transform 250ms linear, opacity 250ms linear;
+    transform: translateY(100%);
 
     @include tablet {
       margin-bottom: 30px;
@@ -56,6 +64,10 @@
 
     color: $white;
     background-color: $accent;
+
+    opacity: 0;
+    transition: transform 250ms linear, opacity 250ms linear;
+    transform: translateY(100%);
 
     &:hover,
     &:focus {
@@ -81,6 +93,10 @@
     left: -1px;
     width: 162px;
 
+    opacity: 0;
+    transition: transform 250ms linear, opacity 250ms linear;
+    transform: translateX(-100%);
+
     @include tablet {
       top: 125px;
       left: 0;
@@ -103,8 +119,6 @@
     top: -220px;
     width: 1695px;
 
-    //
-
     z-index: -1;
 
     @include tablet {
@@ -125,6 +139,10 @@
     left: -348px;
     top: 59px;
 
+    opacity: 0;
+    transition: transform 250ms linear, opacity 250ms linear;
+    transform: translateX(-100%);
+
     @include tablet {
       display: none;
     }
@@ -140,6 +158,10 @@
     right: 119px;
     bottom: -18px;
     width: 178px;
+
+    opacity: 0;
+    transition: transform 250ms linear, opacity 250ms linear;
+    transform: translateX(100%);
 
     @include tablet {
       right: 0;
@@ -163,6 +185,10 @@
     right: -478px;
     width: 685px;
 
+    opacity: 0;
+    transition: transform 250ms linear, opacity 250ms linear;
+    transform: translateX(100%);
+
     @include tablet {
       display: none;
     }
@@ -170,4 +196,19 @@
       display: none;
     }
   }
+}
+
+//animation
+
+.animation-left,
+.animation-top,
+.animation-down {
+  opacity: 1;
+  transition: transform 250ms linear, opacity 250ms linear;
+  transform: translateX(0);
+}
+
+.animation-top,
+.animation-down {
+  transform: translateY(0);
 }

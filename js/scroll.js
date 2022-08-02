@@ -4,10 +4,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const animationElements = document.querySelectorAll('[data-animation]');
   //
   const scrollAnimation = () => {
-    let windowCenter = window.innerHeight / 2 + window.scrollY;
+    let windowCenter = window.innerHeight + window.scrollY;
 
     animationElements.forEach(el => {
-      let scrollOffset = el.getBoundingClientRect().top + el.offsetHeight / 2;
+      let scrollOffset = el.getBoundingClientRect().top + window.scrollY + el.offsetHeight / 2;
       const animationDirection = el.getAttribute('data-animation');
 
       if (windowCenter >= scrollOffset) {
